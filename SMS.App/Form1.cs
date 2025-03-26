@@ -23,13 +23,17 @@ namespace SMS.App
         {
             var student = new Student
             {
-                StudentId =id,
+                StudentId = id,
                 StudentName = name,
-                StudentEmail = email
+                StudentEmail = email,
+                DateAdded = DateTime.Now,
+                AddedBy = "Admin"
             };
             textBoxId.Text = student.StudentId.ToString();
             textBoxName.Text = student.StudentName;
             textBoxEmail.Text = student.StudentEmail;
+            //labelAddedInformation.Text = "Added by : "+student.AddedBy +" " + student.DateAdded;
+            labelAddedInformation.Text = $"Added by : {student.AddedBy} {student.DateAdded}";
         }
     }
 }
