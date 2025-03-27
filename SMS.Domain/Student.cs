@@ -12,6 +12,6 @@ namespace SMS.Domain
 
         [ForeignKey("ProgramId")]
         public int ProgramId { get; set; }
-        public virtual programs Programs { get; set; }
+        public virtual Programs? Programs { get; set; }
     }
 }
