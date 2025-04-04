@@ -38,7 +38,7 @@ namespace SMS.Infrastructure.Migrations
 
                     b.HasKey("ProgramId");
 
-                    b.ToTable("Programs");
+                    b.ToTable("Programs", (string)null);
                 });
 
             modelBuilder.Entity("SMS.Domain.Student", b =>
@@ -71,7 +71,7 @@ namespace SMS.Infrastructure.Migrations
 
                     b.HasIndex("ProgramsProgramId");
 
-                    b.ToTable("Students");
+                    b.ToTable("Students", (string)null);
                 });
 
             modelBuilder.Entity("SMS.Domain.Student", b =>
